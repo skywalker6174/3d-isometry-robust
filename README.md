@@ -2,7 +2,7 @@
 ## Environment
 Ubuntu 16.04.5 LTS  
 GPU RTX2080ti  
-Python 3.7.4  
+Python 3.7
 Install the python dependencies with  
 ```bash
 pip install -r requirements.txt
