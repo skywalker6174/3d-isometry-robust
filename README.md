@@ -23,7 +23,7 @@ python train_pure.py --data modelnet40 --model pointnet
 python ctri_attack.py --data modelnet40 --model pointnet --model_path 'example'
 ```
 
-## Reference
+## References
 PointNet  [/charlesq34/pointnet](https://github.com/charlesq34/pointnet), [/fxia22/pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch)    
 PointNet++  [/charlesq34/pointnet2](https://github.com/charlesq34/pointnet2), [/yanx27/Pointnet_Pointnet2_pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)  
 DG-CNN  [/WangYueFt/dgcnn](https://github.com/WangYueFt/dgcnn)  
