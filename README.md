@@ -14,11 +14,11 @@ pip install -r requirements.txt
 The default path of data is /data.  
 
 ## Usage Sample
-**Train model** with default parameters setting, ModelNet40 data, PointNet model  
+**Train model** With default parameters setting, run 
 ```bash
 python train_pure.py --data modelnet40 --model pointnet
 ```
-**Launch attack** if you don't want to train, download a trained model [here](https://drive.google.com/file/d/1bQSIyTjVl4DAdMGQtLbySdfG8TCeMLpu/view?usp=sharing) (with ModelNet40 data, PointNet model), move it to /checkpoints, then run
+**Launch attack** If you don't want to retrain the model, download a trained model [here](https://drive.google.com/file/d/1bQSIyTjVl4DAdMGQtLbySdfG8TCeMLpu/view?usp=sharing) (with ModelNet40 data, PointNet model), move it to /checkpoints, then run
 ```bash
 python ctri_attack.py --data modelnet40 --model pointnet --model_path 'example'
 ```
