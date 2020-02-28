@@ -200,7 +200,7 @@ def gen_attack_log(args):
     return logname
 
 def test(test_loader, model):
-    #model.eval()
+    model.eval()
     correct = 0
     total = 0
     for j, data in enumerate(test_loader, 0):
@@ -380,7 +380,7 @@ if __name__ == '__main__':
                 correct, rates, indices, model_v, penalty, steps = gradient_attack(obj, label, model_v, args)
                 indx_label = (indices == label.item()).nonzero().item()
                 if correct == 1:
-                    penalty = 0 # attack fail
+                    penalty = 0 # CTRI attack fail
                     
                 else:
                     iso_penalties.append(penalty)
