@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 ## Data
 **ModelNet40** automatically downloaded  
-**ShapeNet** [/fxia22/pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch) (follow the guidence for downloading shapenet data)  
+**ShapeNet** [/fxia22/pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch) (follow the guidence for downloading)  
 The default path of data is '/data'.  
 
 ## Usage Sample
