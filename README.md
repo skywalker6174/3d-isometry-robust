@@ -18,11 +18,12 @@ The default path of data is '/data'.
 ```bash
 python train.py --data modelnet40 --model pointnet
 ```
+Trained model is stored in '/checkpoints' with log in '/logs_train'.
 **Launch attack** If you don't want to retrain the model, download a trained model [here](https://drive.google.com/file/d/1bQSIyTjVl4DAdMGQtLbySdfG8TCeMLpu/view?usp=sharing) (with ModelNet40 data, PointNet model), move it to '/checkpoints', then run
 ```bash
 python attack.py --data modelnet40 --model pointnet --model_path 'example'
 ```
-
+The attack log is stored in '/logs_attack'.
 ## References
 PointNet  [/charlesq34/pointnet](https://github.com/charlesq34/pointnet), [/fxia22/pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch)    
 PointNet++  [/charlesq34/pointnet2](https://github.com/charlesq34/pointnet2), [/yanx27/Pointnet_Pointnet2_pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)  
