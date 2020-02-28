@@ -6,3 +6,4 @@ Pillow==6.2.1
 statistics==1.0.3.5
 torch==1.0.0
 plyfile==0.7.1
+sklearn==0.0
