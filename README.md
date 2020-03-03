@@ -9,8 +9,8 @@ pip install -r requirements.txt
 ```
 
 ## Data
-**ModelNet40** automatically downloaded  
-**ShapeNet** [/fxia22/pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch) (follow the guidence for downloading)  
+- **ModelNet40** automatically downloaded  
+- **ShapeNet** [/fxia22/pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch) (follow the guidence for downloading)  
 The default path of data is '/data'.  
 
 ## Usage Sample
@@ -28,9 +28,9 @@ python attack.py --data modelnet40 --model pointnet --model_path 'example'
 The attack log is stored in '/logs_attack'. The attack is default to be CTRI since TSI is done at the same time. 
 
 ## References
-PointNet  [/charlesq34/pointnet](https://github.com/charlesq34/pointnet), [/fxia22/pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch)    
-PointNet++  [/charlesq34/pointnet2](https://github.com/charlesq34/pointnet2), [/yanx27/Pointnet_Pointnet2_pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)  
-DG-CNN  [/WangYueFt/dgcnn](https://github.com/WangYueFt/dgcnn)  
-RS-CNN  [/Yochengliu/Relation-Shape-CNN](https://github.com/Yochengliu/Relation-Shape-CNN)  
-Thompson Sampling  [/andrecianflone/thompson](https://github.com/andrecianflone/thompson)  
-Adversarial Attacks [/MadryLab](https://github.com/MadryLab), [/YyzHarry/ME-Net](https://github.com/YyzHarry/ME-Net)   
+- PointNet  [/charlesq34/pointnet](https://github.com/charlesq34/pointnet), [/fxia22/pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch)    
+- PointNet++  [/charlesq34/pointnet2](https://github.com/charlesq34/pointnet2), [/yanx27/Pointnet_Pointnet2_pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)  
+- DG-CNN  [/WangYueFt/dgcnn](https://github.com/WangYueFt/dgcnn)  
+- RS-CNN  [/Yochengliu/Relation-Shape-CNN](https://github.com/Yochengliu/Relation-Shape-CNN)  
+- Thompson Sampling  [/andrecianflone/thompson](https://github.com/andrecianflone/thompson)  
+- Adversarial Attacks [/MadryLab](https://github.com/MadryLab), [/YyzHarry/ME-Net](https://github.com/YyzHarry/ME-Net)   
