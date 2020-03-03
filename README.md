@@ -9,9 +9,12 @@ pip install -r requirements.txt
 ```
 
 ## Data
-- **ModelNet40** automatically downloaded  
-- **ShapeNet** [/fxia22/pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch) (follow the guidence for downloading)  
+- [ModelNet40] automatically downloaded  
+- [ShapeNet] [/fxia22/pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch) (follow the guidence for downloading)  
 The default path of data is '/data'.  
+### Future possible data sets
+- [ScanNet](http://www.scan-net.org/)  
+- [KITTI] (http://www.cvlibs.net/datasets/kitti/)
 
 ## Usage Sample
 ### Train model
