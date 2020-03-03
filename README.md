@@ -14,7 +14,7 @@ pip install -r requirements.txt
 The default path of data is '/data'.  
 ### Future possible data sets
 - [ScanNet](http://www.scan-net.org/)  
-- [KITTI] (http://www.cvlibs.net/datasets/kitti/)
+- [KITTI](http://www.cvlibs.net/datasets/kitti/)
 
 ## Usage Sample
 ### Train model
