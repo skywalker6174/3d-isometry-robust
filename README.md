@@ -1,4 +1,4 @@
-# [CVPR2020](https://arxiv.org/abs/2002.12222) On Isometry Robustness of Deep 3D Point Cloud Models under Adversarial Attacks
+# [CVPR2020]) [On Isometry Robustness of Deep 3D Point Cloud Models under Adversarial Attacks](https://arxiv.org/abs/2002.12222)
 ## Environment
 Ubuntu 16.04.5 LTS  
 GPU RTX2080ti  
