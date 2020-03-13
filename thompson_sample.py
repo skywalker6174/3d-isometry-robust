@@ -44,7 +44,7 @@ class environment():
     def get_reward_matrix(self, arm, obj, label, model):
         a, b = self.arm_to_interval(arm)
         
-        matrix = isometry_init.reflection(a, b)
+        matrix = isometry_init.rotation_xyz(a, b) #or use isometry_init.reflection(a, b)
         model.iso.weight.data = torch.Tensor(matrix).to(device)
         _, correct, _, _ = logits_info(obj, label, model)
         if self.train:
