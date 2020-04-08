@@ -28,7 +28,7 @@ python attack.py --data modelnet40 --model pointnet --model_path 'example'
 The attack log is stored in '/logs_attack'. The attack is default to be CTRI since TSI is done at the same time. 
 
 ## Supplementary materials
-Please check [here](https://drive.google.com/open?id=1chuz8j_Io75icvLCqAHLu48epH2cgS6K).
+Please check [here](https://drive.google.com/open?id=1chuz8j_Io75icvLCqAHLu48epH2cgS6K) for supplementary materials mentioned in this paper.
 
 ## References
 - PointNet  [/charlesq34/pointnet](https://github.com/charlesq34/pointnet), [/fxia22/pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch)    
