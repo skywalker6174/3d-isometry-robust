@@ -6,6 +6,48 @@ from torch.utils.data import Dataset
 import json
 from plyfile import PlyData, PlyElement
 
+def load_data_s3dis(partition, point_num, data_dir='/mnt/dataset/s3dis/classification'):
+    h5_name = os.path.join(data_dir, partition + '_' + str(point_num) + '.hdf5')
+    all_data = []
+    all_label = []
+    assert os.path.isfile(h5_name), '{} does not exist.'.format(h5_name)
+    f = h5py.File(h5_name, 'r')
+    length = f['valid_count'][0]
+    data = f['data'][:length].astype('float32')
+    label = f['label'][:length].astype('int64')
+    f.close()
+    return data, label
+
+
+class S3DIS(Dataset):
+    def __init__(self, num_points=1024, partition='train', transforms = None):
+        #partition can be train or test
+        self.data, self.label = load_data_s3dis(partition, num_points)
+        self.num_points = num_points
+        self.partition = partition
+        self.transforms = transforms
+        #self.cat = get_catogrey()
+        #self.classes = list(self.cat.keys())
+     
+
+    def __getitem__(self, item):
+        pointcloud = self.data[item][:self.num_points,:3]
+        label = self.label[item]
+        label = np.expand_dims(label,axis=0)
+        if self.partition == 'train':
+            np.random.shuffle(pointcloud)
+        if self.transforms is not None:
+            pointcloud = self.transforms(pointcloud)
+        return pointcloud, label
+
+    def __len__(self):
+        return self.data.shape[0]
+
+
+
+
+
+
 def modelnet40_download():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     #BASE_DIR = os.getcwd()
