@@ -2,7 +2,7 @@ h5py==2.10.0
 matplotlib==3.1.1
 numpy==1.17.2
 open3d-python==0.7.0.0
-Pillow==6.2.1
+Pillow==9.0.0
 statistics==1.0.3.5
 torch==1.0.0
 plyfile==0.7.1
